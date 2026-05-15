@@ -1,65 +1,148 @@
-import Image from "next/image";
-
+import HeroCarousel from "../src/components/landing_page/heroCarousel";
+import Highlights from "../src/components/landing_page/Highlights";
+import LogoCarousel from "../src/components/landing_page/logosCarousel";
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <>
+      <div className="w-full mx-auto flex flex-col items-center justify-center bg-black py-[100px] space-y-[100px] md:space-y-[200px]">
+        <div className="md:mt-10 w-[80%] mx-auto scroll-mt-55" id="home">
+          <HeroCarousel />
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+        <div className="w-[80%]">
+          <h6 className="text-start font-light text-[16px] md:text-[25px] leading-[22px] md:leading-[40px]">
+            <span className="text-orange font-medium">Rap Auf Takt </span>ist
+            eine internationale Hip-Hop-Kulturmarke, die durch echte Begegnungen
+            zwischen Artists und Community nachhaltige kulturelle Relevanz
+            schafft.
+          </h6>
         </div>
-      </main>
-    </div>
+        <div className="w-[80%] scroll-mt-55" id="highlights">
+          <Highlights />
+        </div>
+        <div className="w-[90%] scroll-mt-55" id="references">
+          <LogoCarousel />
+        </div>
+
+        <div
+          className=" w-[80%] mx-auto flex   flex-col space-y-8 md:space-y-14 items-center justify-center rounded-[20px] md:rounded-[25px] bg-[#ff6200] p-12 text-white"
+          id="contact"
+        >
+          <h2 className="text-center text-[24px] md:text-[40px] font-midium uppercase tracking-tight md:text-6xl">
+            CONTACT US
+          </h2>
+
+          <a
+            href="mailto:welcome@rapauftakt.com"
+            className="flex items-center gap-2 md:gap-4 text-center text-2xl font-medium transition-opacity hover:opacity-90 md:text-5xl"
+          >
+            {/* Mail SVG */}
+            <svg
+              className="h-5 w-5 shrink-0 md:h-[30px] md:w-[30px]"
+              viewBox="0 0 30 30"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M24.375 9.99976C26.1009 9.99976 27.5 8.60065 27.5 6.87476C27.5 5.14887 26.1009 3.74976 24.375 3.74976C22.6491 3.74976 21.25 5.14887 21.25 6.87476C21.25 8.60065 22.6491 9.99976 24.375 9.99976Z"
+                fill="white"
+              />
+              <path
+                d="M24.375 9.99976C26.1009 9.99976 27.5 8.60065 27.5 6.87476C27.5 5.14887 26.1009 3.74976 24.375 3.74976C22.6491 3.74976 21.25 5.14887 21.25 6.87476C21.25 8.60065 22.6491 9.99976 24.375 9.99976Z"
+                fill="white"
+              />
+              <path
+                d="M25.9 11.6377C25.025 11.9127 24.0625 11.9627 23.0625 11.7127C21.3875 11.2752 20.025 9.93774 19.5625 8.26274C19.3375 7.45024 19.325 6.65024 19.4625 5.92524C19.625 5.12524 19.0625 4.37524 18.2625 4.37524H8.75C5 4.37524 2.5 6.25024 2.5 10.6252V19.3752C2.5 23.7502 5 25.6252 8.75 25.6252H21.25C25 25.6252 27.5 23.7502 27.5 19.3752V12.8252C27.5 12.0002 26.7 11.3752 25.9 11.6377ZM19.4 13.9377L17.925 15.1127C17.1 15.7752 16.05 16.1002 15 16.1002C13.95 16.1002 12.8875 15.7752 12.075 15.1127L8.1625 11.9877C7.7625 11.6627 7.7 11.0627 8.0125 10.6627C8.3375 10.2627 8.925 10.1877 9.325 10.5127L13.2375 13.6377C14.1875 14.4002 15.8 14.4002 16.75 13.6377L18.225 12.4627C18.625 12.1377 19.225 12.2002 19.5375 12.6127C19.8625 13.0127 19.8 13.6127 19.4 13.9377Z"
+                fill="white"
+              />
+            </svg>
+
+            <span className="text-[18px] md:text-[22px] font-base text-white">
+              welcome@rapauftakt.com
+            </span>
+          </a>
+
+          <div className="flex items-center justify-center gap-6 md:gap-10">
+            <a
+              href="https://www.instagram.com/rapauftakt/"
+              aria-label="Instagram"
+              className="transition-transform duration-200 hover:scale-105"
+            >
+              {/* Instagram SVG */}
+              <svg
+                className="h-5 w-5 shrink-0 md:h-[31px] md:w-[31px]"
+                viewBox="0 0 31 31"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_75_1227)">
+                  <path
+                    d="M15.5 2.79121C19.6414 2.79121 20.1318 2.80937 21.7605 2.88203C23.2742 2.94863 24.0916 3.20293 24.6365 3.41484C25.357 3.69336 25.8777 4.03242 26.4166 4.57129C26.9615 5.11621 27.2945 5.63086 27.573 6.35137C27.785 6.89629 28.0393 7.71973 28.1059 9.22734C28.1785 10.8621 28.1967 11.3525 28.1967 15.4879C28.1967 19.6293 28.1785 20.1197 28.1059 21.7484C28.0393 23.2621 27.785 24.0795 27.573 24.6244C27.2945 25.3449 26.9555 25.8656 26.4166 26.4045C25.8717 26.9494 25.357 27.2824 24.6365 27.5609C24.0916 27.7729 23.2682 28.0271 21.7605 28.0938C20.1258 28.1664 19.6354 28.1846 15.5 28.1846C11.3586 28.1846 10.8682 28.1664 9.23945 28.0938C7.72578 28.0271 6.9084 27.7729 6.36348 27.5609C5.64297 27.2824 5.12227 26.9434 4.5834 26.4045C4.03848 25.8596 3.70547 25.3449 3.42695 24.6244C3.21504 24.0795 2.96074 23.2561 2.89414 21.7484C2.82148 20.1137 2.80332 19.6232 2.80332 15.4879C2.80332 11.3465 2.82148 10.8561 2.89414 9.22734C2.96074 7.71367 3.21504 6.89629 3.42695 6.35137C3.70547 5.63086 4.04453 5.11016 4.5834 4.57129C5.12832 4.02637 5.64297 3.69336 6.36348 3.41484C6.9084 3.20293 7.73184 2.94863 9.23945 2.88203C10.8682 2.80937 11.3586 2.79121 15.5 2.79121ZM15.5 0C11.292 0 10.7652 0.0181641 9.1123 0.0908203C7.46543 0.163477 6.3332 0.429883 5.35234 0.811328C4.3291 1.21094 3.46328 1.7377 2.60352 2.60352C1.7377 3.46328 1.21094 4.3291 0.811328 5.34629C0.429883 6.3332 0.163477 7.45937 0.0908203 9.10625C0.0181641 10.7652 0 11.292 0 15.5C0 19.708 0.0181641 20.2348 0.0908203 21.8877C0.163477 23.5346 0.429883 24.6668 0.811328 25.6477C1.21094 26.6709 1.7377 27.5367 2.60352 28.3965C3.46328 29.2562 4.3291 29.7891 5.34629 30.1826C6.3332 30.5641 7.45937 30.8305 9.10625 30.9031C10.7592 30.9758 11.2859 30.9939 15.4939 30.9939C19.702 30.9939 20.2287 30.9758 21.8816 30.9031C23.5285 30.8305 24.6607 30.5641 25.6416 30.1826C26.6588 29.7891 27.5246 29.2562 28.3844 28.3965C29.2441 27.5367 29.777 26.6709 30.1705 25.6537C30.552 24.6668 30.8184 23.5406 30.891 21.8938C30.9637 20.2408 30.9818 19.7141 30.9818 15.5061C30.9818 11.298 30.9637 10.7713 30.891 9.11836C30.8184 7.47148 30.552 6.33926 30.1705 5.3584C29.7891 4.3291 29.2623 3.46328 28.3965 2.60352C27.5367 1.74375 26.6709 1.21094 25.6537 0.817383C24.6668 0.435937 23.5406 0.169531 21.8938 0.096875C20.2348 0.0181641 19.708 0 15.5 0Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M15.5 7.53809C11.1043 7.53809 7.53809 11.1043 7.53809 15.5C7.53809 19.8957 11.1043 23.4619 15.5 23.4619C19.8957 23.4619 23.4619 19.8957 23.4619 15.5C23.4619 11.1043 19.8957 7.53809 15.5 7.53809ZM15.5 20.6646C12.6482 20.6646 10.3354 18.3518 10.3354 15.5C10.3354 12.6482 12.6482 10.3354 15.5 10.3354C18.3518 10.3354 20.6646 12.6482 20.6646 15.5C20.6646 18.3518 18.3518 20.6646 15.5 20.6646Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M25.6355 7.22329C25.6355 8.25259 24.8 9.08208 23.7768 9.08208C22.7475 9.08208 21.918 8.24654 21.918 7.22329C21.918 6.194 22.7535 5.3645 23.7768 5.3645C24.8 5.3645 25.6355 6.20005 25.6355 7.22329Z"
+                    fill="white"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_75_1227">
+                    <rect width="31" height="31" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </a>
+
+            <a
+              href="#"
+              aria-label="TikTok"
+              className="transition-transform duration-200 hover:scale-105"
+            >
+              {/* TikTok SVG */}
+              <svg
+                className="h-5 w-5 shrink-0 md:h-[31px] md:w-[31px]"
+
+                viewBox="0 0 31 31"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M22.052 0H16.8276V21.1159C16.8276 23.6319 14.8182 25.6986 12.3177 25.6986C9.81708 25.6986 7.8077 23.6319 7.8077 21.1159C7.8077 18.6449 9.77243 16.6231 12.1837 16.5333V11.2319C6.86999 11.3217 2.58331 15.6797 2.58331 21.1159C2.58331 26.5971 6.95929 31 12.3623 31C17.7653 31 22.1413 26.5522 22.1413 21.1159V10.2884C24.106 11.7261 26.5172 12.5797 29.0625 12.6247V7.32319C25.1331 7.18841 22.052 3.95362 22.052 0Z"
+                  fill="white"
+                />
+              </svg>
+            </a>
+
+            <a
+              href="#"
+              aria-label="YouTube"
+              className="transition-transform duration-200 hover:scale-105"
+            >
+              {/* YouTube SVG */}
+              <svg
+                className="h-5 w-5 shrink-0 md:h-[31px] md:w-[31px]"
+                viewBox="0 0 31 31"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M30.6912 9.29995C30.6912 9.29995 30.3885 7.16265 29.4561 6.22417C28.2754 4.98901 26.9555 4.98296 26.35 4.9103C22.0148 4.59546 15.5061 4.59546 15.5061 4.59546H15.4939C15.4939 4.59546 8.98516 4.59546 4.65 4.9103C4.04453 4.98296 2.72461 4.98901 1.54395 6.22417C0.611524 7.16265 0.314844 9.29995 0.314844 9.29995C0.314844 9.29995 0 11.8126 0 14.3193V16.6685C0 19.1751 0.308789 21.6878 0.308789 21.6878C0.308789 21.6878 0.611523 23.8251 1.53789 24.7636C2.71855 25.9988 4.26855 25.9564 4.95879 26.0896C7.44121 26.3257 15.5 26.3984 15.5 26.3984C15.5 26.3984 22.0148 26.3863 26.35 26.0775C26.9555 26.0048 28.2754 25.9988 29.4561 24.7636C30.3885 23.8251 30.6912 21.6878 30.6912 21.6878C30.6912 21.6878 31 19.1812 31 16.6685V14.3193C31 11.8126 30.6912 9.29995 30.6912 9.29995ZM12.2971 19.5203V10.8076L20.6707 15.1791L12.2971 19.5203Z"
+                  fill="white"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div className="w-[90%] flex items-center justify-between space-x-2 mx-auto mb-5">
+        <h6 className="font-light text-[8px] md:text-[12px] text-white whitespace-nowrap">
+          © Copyright 2026 - rapauftakt ®. All Rights Reserved.
+        </h6>
+        <div className="h-[1px] bg-white w-full " />
+      </div>
+    </>
   );
 }

@@ -20,5 +20,7 @@
   font-family: var(--font-nohemi), sans-serif;
   }
 }
-
+html {
+  scroll-behavior: smooth;
+}
 
