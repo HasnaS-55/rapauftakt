@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <>
       <div className="w-full mx-auto flex flex-col items-center justify-center bg-black py-[100px] space-y-[100px] md:space-y-[200px]">
-        <div className="md:mt-5 -mt-10 w-[80%] mx-auto scroll-mt-55" id="home">
+        <div className="md:mt-0 -mt-10 w-[80%] mx-auto scroll-mt-55" id="home">
           <HeroCarousel />
         </div>
         <div className="w-[80%]">

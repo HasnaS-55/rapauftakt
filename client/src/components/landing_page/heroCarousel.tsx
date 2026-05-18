@@ -81,7 +81,7 @@ export default function HeroCarousel() {
             fill
             priority={i === 0}
             sizes="100vw"
-            className="object-cover object-center sm:object-[center_35%] md:object-[center_30%] lg:object-center scale-[1.4] sm:scale-[1.5] md:scale-[1.4] lg:scale-[1.2] xl:scale-[1.03]"
+            className="object-cover object-center sm:object-[center_35%] md:object-[center_30%] lg:object-center scale-[1.5] sm:scale-[1.5] md:scale-[1.4] lg:scale-[1.2] xl:scale-[1.03]"
           />
 
           <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
