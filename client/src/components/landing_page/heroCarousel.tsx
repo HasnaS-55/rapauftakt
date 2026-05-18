@@ -57,7 +57,7 @@ export default function HeroCarousel() {
   }, []);
 
   return (
-    <section className="relative h-[420px] w-full overflow-hidden rounded-[20px] sm:h-[520px] md:h-[620px] lg:h-[700px] lg:rounded-[35px]">
+    <section className="relative h-[420px] w-full overflow-hidden rounded-[20px] sm:h-[560px] md:h-[680px] lg:h-[700px] lg:rounded-[35px]">
       {slides.map((slide, i) => (
         <div
           key={i}
@@ -66,9 +66,9 @@ export default function HeroCarousel() {
             transform:
               i === current
                 ? animating && direction === "out"
-                  ? "translateX(-100%) scale(1.05)"
+                  ? "translateX(-100%) scale(1.08)"
                   : "translateX(0) scale(1)"
-                : "translateX(100%) scale(1.05)",
+                : "translateX(100%) scale(1.08)",
             opacity: i === current ? 1 : 0,
             transition:
               "transform 700ms cubic-bezier(0.76, 0, 0.24, 1), opacity 700ms ease",
@@ -80,8 +80,8 @@ export default function HeroCarousel() {
             alt={slide.title.join(" ")}
             fill
             priority={i === 0}
-            sizes="(max-width: 639px) 100vw, (max-width: 1023px) 100vw, 100vw"
-            className="object-cover object-center"
+            sizes="100vw"
+            className="object-cover object-center sm:object-[center_35%] md:object-[center_30%] lg:object-center scale-[1.3] sm:scale-[1.5] md:scale-[1.4] lg:scale-[1.2] xl:scale-[1.03]"
           />
 
           <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
@@ -111,7 +111,7 @@ export default function HeroCarousel() {
             </p>
           </div>
 
-          <div className="absolute bottom-5 right-5 z-10 sm:bottom-7 sm:right-7 md:bottom-8 md:right-8 lg:bottom-10 lg:right-10">
+          <div className="absolute bottom-3 right-3 z-10 sm:bottom-7 sm:right-7 md:bottom-8 md:right-8 lg:bottom-10 lg:right-10">
             <button
               className="flex h-16 w-16 items-center justify-center rounded-full bg-white text-[10px] font-bold uppercase tracking-[0.18em] text-black transition-colors duration-300 hover:bg-orange hover:text-white sm:h-20 sm:w-20 sm:text-xs md:h-24 md:w-24 lg:h-30 lg:w-30"
               style={{ fontFamily: "var(--font-nohemi)" }}

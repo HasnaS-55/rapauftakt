@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useRef, useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { motion } from "motion/react";
 
 const logos = [
@@ -72,7 +72,6 @@ export default function LogoCarousel() {
 
   return (
     <section className="relative w-full overflow-hidden bg-black">
-      {/* fades */}
       <div
         className="pointer-events-none absolute left-0 top-0 z-10 h-full w-16 sm:w-24 md:w-40 lg:w-80"
         style={{
@@ -88,7 +87,7 @@ export default function LogoCarousel() {
         }}
       />
 
-      {/* phone */}
+      {/* mobile */}
       <div className="flex h-[120px] flex-col justify-center gap-8 px-2 sm:hidden">
         <div className="overflow-hidden">
           <motion.div
@@ -102,7 +101,7 @@ export default function LogoCarousel() {
               repeatType: "loop",
             }}
           >
-            {renderLogos(topRow, "h-[28px] w-[92px]", "92px")}
+            {renderLogos(topRow, "h-[50px] w-[120px]", "120px")}
           </motion.div>
         </div>
 
@@ -118,16 +117,51 @@ export default function LogoCarousel() {
               repeatType: "loop",
             }}
           >
-            {renderLogos(bottomRow, "h-[28px] w-[92px]", "92px")}
+            {renderLogos(bottomRow, "h-[50px] w-[120px]", "120px")}
           </motion.div>
         </div>
       </div>
 
-      {/* tablet + desktop */}
-      <div className="hidden h-[70px] items-center sm:flex">
+      {/* tablet */}
+      <div className="hidden h-[120px] flex-col justify-center gap-2 px-4 sm:flex lg:hidden">
+        <div className="overflow-hidden">
+          <motion.div
+            ref={mobileTopRef}
+            className="flex w-max items-center gap-8"
+            animate={mobileTopWidth > 0 ? { x: [0, -mobileTopWidth] } : false}
+            transition={{
+              duration: 16,
+              ease: "linear",
+              repeat: Infinity,
+              repeatType: "loop",
+            }}
+          >
+            {renderLogos(topRow, "h-[50px] w-[150px]", "150px")}
+          </motion.div>
+        </div>
+
+        <div className="overflow-hidden">
+          <motion.div
+            ref={mobileBottomRef}
+            className="flex w-max items-center gap-8"
+            animate={mobileBottomWidth > 0 ? { x: [-mobileBottomWidth, 0] } : false}
+            transition={{
+              duration: 16,
+              ease: "linear",
+              repeat: Infinity,
+              repeatType: "loop",
+            }}
+          >
+            {renderLogos(bottomRow, "h-[50px] w-[150px]", "150px")}
+          </motion.div>
+        </div>
+      </div>
+
+      {/* desktop */}
+      <div className="hidden h-[70px] items-center lg:flex">
         <motion.div
           ref={desktopTrackRef}
-          className="flex w-max items-center gap-10 md:gap-16"
+          className="flex w-max items-center gap-10 md:gap-5"
           animate={desktopTrackWidth > 0 ? { x: [0, -desktopTrackWidth] } : false}
           transition={{
             duration: 20,
@@ -136,7 +170,7 @@ export default function LogoCarousel() {
             repeatType: "loop",
           }}
         >
-          {renderLogos(logos, "h-[44px] w-[110px] md:h-[60px] md:w-[120px]", "120px")}
+          {renderLogos(logos, "h-[44px] w-[180px] md:h-[70px] md:w-[180px]", "180px")}
         </motion.div>
       </div>
     </section>

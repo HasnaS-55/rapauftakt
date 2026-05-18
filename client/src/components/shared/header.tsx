@@ -48,7 +48,7 @@ export default function Header() {
 
   return (
     <header className="fixed top-0 left-0 z-50 w-full bg-black">
-      <div className="mx-auto flex w-[80%] items-center justify-between py-6">
+      <div className="mx-auto flex w-[80%] items-center justify-between py-8">
         {/* Logo */}
         <a href="#home">
           <Image
@@ -57,7 +57,7 @@ export default function Header() {
             width={100}
             height={100}
             priority
-            className="h-10 w-10 rounded-full md:h-16 md:w-16 lg:h-[100px] lg:w-[100px]"
+            className="h-12 w-12 rounded-full md:h-16 md:w-16 lg:h-[100px] lg:w-[100px]"
           />
         </a>
 
@@ -120,7 +120,7 @@ export default function Header() {
       {/* Mobile Menu Overlay */}
       {menuOpen && (
         <div className="fixed w-full inset-0 z-50 bg-black lg:hidden">
-          <div className="flex h-dvh flex-col justify-between w-[80%] py-7 mx-auto">
+          <div className="flex h-dvh flex-col justify-between w-[80%] py-8 mx-auto">
             {/* Top row */}
             <div className="flex items-start justify-between">
               <a href="#home" onClick={() => setMenuOpen(false)}>
@@ -129,7 +129,7 @@ export default function Header() {
                   alt="Logo"
                   width={40}
                   height={40}
-                  className="h-10 w-10 rounded-full md:h-16 md:w-16 lg:h-[100px] lg:w-[100px]"
+                  className="h-12 w-12 rounded-full md:h-16 md:w-16 lg:h-[100px] lg:w-[100px]"
                 />
               </a>
 
@@ -204,7 +204,7 @@ export default function Header() {
             {/* Socials */}
             <div className="mt-auto flex items-center gap-5 pt-12">
               <a
-                href="#"
+                href="https://www.instagram.com/rapauftakt/"
                 aria-label="Instagram"
                 className="text-white transition-colors hover:text-orange"
               >
@@ -219,7 +219,7 @@ export default function Header() {
               </a>
 
               <a
-                href="#"
+                href="https://www.tiktok.com/@rapauftakt"
                 aria-label="TikTok"
                 className="text-white transition-colors hover:text-orange"
               >
@@ -234,7 +234,7 @@ export default function Header() {
               </a>
 
               <a
-                href="#"
+                href="https://www.youtube.com/@RapAufTakt/featured"
                 aria-label="YouTube"
                 className="text-white transition-colors hover:text-orange"
               >
