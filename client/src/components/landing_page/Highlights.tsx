@@ -5,18 +5,18 @@ import { useEffect, useState } from "react";
 const highlights = [
   {
     id: 1,
-    video: "https://pub-0218d5cd176b4ab3a44627e4fad3872c.r2.dev/vd1.mp4",
-    episode: "Ep with Doe Pesci",
+    video: "https://pub-0218d5cd176b4ab3a44627e4fad3872c.r2.dev/RapAufTakt_v1mp4.mp4",
+    episode: "Anti Fuchs",
   },
   {
     id: 2,
-    video: "https://pub-0218d5cd176b4ab3a44627e4fad3872c.r2.dev/vd2.mp4",
-    episode: "Ep with Nimo",
+    video: "https://pub-0218d5cd176b4ab3a44627e4fad3872c.r2.dev/RapAufTakt_v2.mp4",
+    episode: "Papke 030",
   },
   {
     id: 3,
-    video: "https://pub-0218d5cd176b4ab3a44627e4fad3872c.r2.dev/vd3.mp4",
-    episode: "Ep with Gizeh",
+    video: "https://pub-0218d5cd176b4ab3a44627e4fad3872c.r2.dev/RapAufTakt_v3.mp4",
+    episode: "Funky Umhang",
   },
 ];
 

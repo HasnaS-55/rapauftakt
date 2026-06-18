@@ -6,11 +6,9 @@ import { motion } from "motion/react";
 
 const logos = [
   { name: "GIZEH", src: "/landingpage/logoCarousel/GIZEH.svg" },
-  { name: "Jägermeister", src: "/landingpage/logoCarousel/Jagermeifter.svg" },
   { name: "Marshall", src: "/landingpage/logoCarousel/Marshall.svg" },
   { name: "Prinz", src: "/landingpage/logoCarousel/Prinz.svg" },
   { name: "Purize", src: "/landingpage/logoCarousel/Purize.svg" },
-  { name: "T", src: "/landingpage/logoCarousel/T.svg" },
   { name: "RedBull", src: "/landingpage/logoCarousel/RedBull.svg" },
   { name: "SOUNDCLOUD", src: "/landingpage/logoCarousel/SoundCloud.svg" },
 ];
