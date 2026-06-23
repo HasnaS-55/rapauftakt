@@ -113,7 +113,7 @@ export default function HeroCarousel() {
 
           <div className="absolute bottom-2 right-2 z-10 sm:bottom-5 sm:right-5 md:bottom-8 md:right-8 lg:bottom-10 lg:right-10">
             <button
-              className="flex h-10 h-10 md:h-16 md:w-16 items-center justify-center rounded-full bg-white text-[8px] md:text-[10px] font-bold uppercase tracking-[0.18em] text-black transition-colors duration-300 hover:bg-orange hover:text-white sm:h-20 sm:w-20 sm:text-xs md:h-24 md:w-24 lg:h-30 lg:w-30"
+              className="flex h-16 w-16 items-center justify-center rounded-full bg-white text-[8px] md:text-[10px] font-bold uppercase tracking-[0.18em] text-black transition-colors duration-300 hover:bg-orange hover:text-white sm:h-20 sm:w-20 sm:text-xs md:h-24 md:w-24 lg:h-30 lg:w-30"
               style={{ fontFamily: "var(--font-nohemi)" }}
               onClick={() =>
                 window.scrollTo({ top: window.innerHeight, behavior: "smooth" })
