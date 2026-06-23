@@ -91,7 +91,7 @@ export default function HeroCarousel() {
               {slide.title.map((line, j) => (
                 <div key={j} className="relative block w-fit">
                   <h1
-                    className="block font-black text-orange leading-[0.9]"
+                    className="block font-black text-orange leading-[1.2]"
                     style={{
                       fontSize: "clamp(2.8rem, 13vw, 9.375rem)",
                       fontFamily: "var(--font-nohemi)",
