@@ -6,32 +6,32 @@ import Image from "next/image";
 const slides = [
   {
     src: "/landingpage/hero/rapper1.jpg",
-    title: ["RAP", "AUF TAKT"],
+    title: ["Rap", "Auf Takt"],
     subtitle: "Cluture – Music – Community",
   },
   {
     src: "/landingpage/hero/rapper2.jpg",
-    title: ["RAP", "AUF TAKT"],
+    title: ["Rap", "Auf Takt"],
     subtitle: "Cluture – Music – Community",
   },
   {
     src: "/landingpage/hero/rapper3.jpg",
-    title: ["RAP", "AUF TAKT"],
+    title: ["Rap", "Auf Takt"],
     subtitle: "Cluture – Music – Community",
   },
   {
     src: "/landingpage/hero/rapper4.jpg",
-    title: ["RAP", "AUF TAKT"],
+    title: ["Rap", "Auf Takt"],
     subtitle: "Cluture – Music – Community",
   },
   {
     src: "/landingpage/hero/rapper5.jpg",
-    title: ["RAP", "AUF TAKT"],
+    title: ["Rap", "Auf Takt"],
     subtitle: "Cluture – Music – Community",
   },
   {
     src: "/landingpage/hero/rapper6.jpg",
-    title: ["RAP", "AUF TAKT"],
+    title: ["Rap", "Auf Takt"],
     subtitle: "Cluture – Music – Community",
   },
 ];
@@ -113,7 +113,7 @@ export default function HeroCarousel() {
 
           <div className="absolute bottom-3 right-3 z-10 sm:bottom-7 sm:right-7 md:bottom-8 md:right-8 lg:bottom-10 lg:right-10">
             <button
-              className="flex h-16 w-16 items-center justify-center rounded-full bg-white text-[10px] font-bold uppercase tracking-[0.18em] text-black transition-colors duration-300 hover:bg-orange hover:text-white sm:h-20 sm:w-20 sm:text-xs md:h-24 md:w-24 lg:h-30 lg:w-30"
+              className="flex h-10 h-10 md:h-16 md:w-16 items-center justify-center rounded-full bg-white text-[8px] md:text-[10px] font-bold uppercase tracking-[0.18em] text-black transition-colors duration-300 hover:bg-orange hover:text-white sm:h-20 sm:w-20 sm:text-xs md:h-24 md:w-24 lg:h-30 lg:w-30"
               style={{ fontFamily: "var(--font-nohemi)" }}
               onClick={() =>
                 window.scrollTo({ top: window.innerHeight, behavior: "smooth" })
