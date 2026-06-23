@@ -91,7 +91,7 @@ export default function HeroCarousel() {
               {slide.title.map((line, j) => (
                 <div key={j} className="relative block w-fit">
                   <h1
-                    className="block font-black leading-[0.9] text-orange"
+                    className="block font-black leading-[0.9] text-orange loading-[30px]"
                     style={{
                       fontSize: "clamp(2.8rem, 13vw, 9.375rem)",
                       fontFamily: "var(--font-nohemi)",
@@ -113,7 +113,7 @@ export default function HeroCarousel() {
 
           <div className="absolute bottom-2 right-2 z-10 sm:bottom-5 sm:right-5 md:bottom-8 md:right-8 lg:bottom-10 lg:right-10">
             <button
-              className="flex h-16 w-16 items-center justify-center rounded-full bg-white text-[8px] md:text-[10px] font-bold uppercase tracking-[0.18em] text-black transition-colors duration-300 hover:bg-orange hover:text-white sm:h-20 sm:w-20 sm:text-xs md:h-24 md:w-24 lg:h-30 lg:w-30"
+              className="flex h-16 w-16 items-center justify-center rounded-full bg-white text-[10px] font-bold uppercase tracking-[0.18em] text-black transition-colors duration-300 hover:bg-orange hover:text-white sm:h-20 sm:w-20 sm:text-xs md:h-24 md:w-24 lg:h-30 lg:w-30"
               style={{ fontFamily: "var(--font-nohemi)" }}
               onClick={() =>
                 window.scrollTo({ top: window.innerHeight, behavior: "smooth" })
